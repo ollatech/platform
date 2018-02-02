@@ -1,0 +1,35 @@
+<?xml version="1.0" ?>
+<container xmlns="http://symfony.com/schema/dic/services"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+	<services>
+		<service id="Olla\Platform\Action\CollectionAction" class="Olla\Platform\Action\CollectionAction" public="true">
+			<argument type="service" id="Olla\Platform\Service\QueryService" />
+			<tag name="olla.action" alias="class_collection_operation" /> 
+		</service>
+		<service id="Olla\Platform\Action\CreateAction" class="Olla\Platform\Action\CreateAction" public="true">
+			<argument type="service" id="Olla\Platform\Service\QueryService" />
+			<tag name="olla.action" alias="class_create_operation" /> 
+		</service>
+		<service id="Olla\Platform\Action\DeleteAction" class="Olla\Platform\Action\DeleteAction" public="true">
+			<argument type="service" id="Olla\Platform\Service\QueryService" />
+			<tag name="olla.action" alias="class_create_operation" /> 
+		</service>
+		<service id="Olla\Platform\Action\ItemAction" class="Olla\Platform\Action\ItemAction" public="true">
+			<argument type="service" id="Olla\Platform\Service\QueryService" />
+			<tag name="olla.action" alias="class_create_operation" /> 
+		</service>
+		<service id="Olla\Platform\Action\SearchAction" class="Olla\Platform\Action\SearchAction" public="true">
+			<argument type="service" id="Olla\Platform\Service\QueryService" />
+			<tag name="olla.action" alias="class_create_operation" /> 
+		</service>
+		<service id="Olla\Platform\Action\SubresourceAction" class="Olla\Platform\Action\SubresourceAction" public="true">
+			<argument type="service" id="Olla\Platform\Service\QueryService" />
+			<tag name="olla.action" alias="class_create_operation" /> 
+		</service>
+		<service id="Olla\Platform\Action\UpdateAction" class="Olla\Platform\Action\UpdateAction" public="true">
+			<argument type="service" id="Olla\Platform\Service\QueryService" />
+			<tag name="olla.action" alias="class_create_operation" /> 
+		</service>
+	</services>
+</container>
