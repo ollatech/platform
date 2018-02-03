@@ -8,13 +8,14 @@
     "authors": [
         {
             "name": "Olla Tech",
-            "email": "wawan@olla.tech",
+            "email": "contact@olla.tech",
             "homepage": "https://olla.tech"
         }
     ],
     "require": {
         "php": ">=7.0",
-        "olla/surface": "*"
+        "olla/flow": "*",
+        "olla/api": "*"
     },
     "require-dev": {
         
