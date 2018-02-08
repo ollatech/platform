@@ -2,7 +2,7 @@
 namespace Olla\Platform\Flow;
 
 use Olla\Flow\Security\Gate\GateInterface;
-use Olla\Flow\Metadata\MetadataInterface;
+use Olla\Prisma\MetadataInterface;
 use Olla\Flow\Parser\ParserInterface;
 
 abstract class RequestFlow

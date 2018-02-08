@@ -2,23 +2,24 @@
 
 namespace Olla\Platform\Action;
 
-use Olla\Platform\Service\ServiceInterface;
-use Olla\Flow\Operation\AbstractOperation;
+use Olla\Flow\Repository;
+use Olla\Flow\Theme;
+use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\HttpFoundation\JsonResponse;
 
-final class CollectionAction extends AbstractOperation
+final class CollectionAction
 {
-	protected $queryService;
-	public function __construct(ServiceInterface $queryService) {
-		$this->queryService = $queryService;
+	protected $repo;
+	protected $theme;
+	public function __construct(Repository $repo, Theme $theme) {
+		$this->repo = $repo;
+		$this->theme = $theme;
 	}
-	public function execute(string $resourceClass, array $dataRequest, array $option = []) {
-		return $this->queryService
-		->resource($resourceClass)
-		->database('orm')
-		->select()
-		->format('json')
-		->evaluate()
-		->collection($dataRequest)
-		->result();
+	public function __invoke(Request $request) {
+		print_r($request);
+	}
+	public function invoke(Request $request) {
+		$this->collection->getCollection($resourceClass, $args);
 	}
 }

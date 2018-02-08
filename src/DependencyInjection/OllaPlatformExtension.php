@@ -35,40 +35,5 @@ final class OllaPlatformExtension extends Extension implements PrependExtensionI
         $configuration = new Configuration();
         $config = $this->processConfiguration($configuration, $configs);
 
-        $container->setParameter('flow_resource_paths', $config['mapping']['resource']);
-        $container->setParameter('flow_operation_paths', $config['mapping']['operation']);
-        $container->setParameter('flow_admin_paths', $config['mapping']['admin']);
-        $container->setParameter('flow_frontend_paths', $config['mapping']['frontend']);
-        //classes
-        if(isset($config['class']['operation'])) {
-            $class_operation = $config['class']['operation'];
-        } else {
-            $class_operation = 'Olla\Platform\Action\CollectionAction';
-        }
-        if(isset($config['class']['item'])) {
-            $class_item = $config['class']['item'];
-        } else {
-            $class_item = 'Olla\Platform\Action\ItemAction';
-        }
-        if(isset($config['class']['create'])) {
-            $class_create = $config['class']['create'];
-        } else {
-            $class_create = 'Olla\Platform\Action\CreateAction';
-        }
-        if(isset($config['class']['update'])) {
-            $class_update = $config['class']['updateAction'];
-        } else {
-            $class_update = 'Olla\Platform\Action\UpdateAction';
-        }
-        if(isset($config['class']['delete'])) {
-            $class_delete = $config['class']['delete'];
-        } else {
-            $class_delete = 'Olla\Platform\Action\DeleteAction';
-        }
-        $container->setParameter('class_collection_operation', $class_operation);
-        $container->setParameter('class_item_operation', $class_item);
-        $container->setParameter('class_create_operation', $class_create);
-        $container->setParameter('class_update_operation', $class_update);
-        $container->setParameter('class_delete_operation', $class_delete);
     }
 }

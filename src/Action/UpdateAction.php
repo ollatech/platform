@@ -3,25 +3,15 @@
 namespace Olla\Platform\Action;
 
 
-use Olla\Platform\Service\ServiceInterface;
-use Olla\Flow\Operation\AbstractOperation;
+
+use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\HttpFoundation\JsonResponse;
 
 
-final class UpdateAction extends AbstractOperation
+final class UpdateAction 
 {
-	protected $queryService;
-	public function __construct(ServiceInterface $queryService) {
-		$this->queryService = $queryService;
-	}
-	public function execute(string $resourceClass, array $dataRequest, array $option = []) {
-		$query = $this->queryService
-		->resource($resourceClass)
-		->database('orm')
-		->select()
-		->format('json')
-		->evaluate()
-		->collection($dataRequest)
-		->result();
-		return $query;
+	public function __invoke(Request $request) {
+		
 	}
 }

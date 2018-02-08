@@ -3,7 +3,7 @@ namespace Olla\Platform\Flow;
 
 use Olla\Flow\Security\Guard\GuardInterface;
 use Olla\Flow\Database\DBInterface;
-use Olla\Flow\Metadata\MetadataInterface;
+use Olla\Prisma\MetadataInterface;
 use Olla\Flow\Serializer\SerializerInterface;
 use Olla\Flow\Validator\ValidatorInterface;
 

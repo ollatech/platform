@@ -3,13 +3,6 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
 	<services>
-		<service id="Olla\Platform\Service\QueryService" class="Olla\Platform\Service\QueryService" public="true">
-			<argument type="service" id="Olla\Flow\Metadata\Metadata" />
-			<argument type="service" id="Olla\Flow\Security\Guard\Guard" />
-			<argument type="service" id="Olla\Flow\Database\DB" />
-			<argument type="service" id="Olla\Flow\Serializer\Serializer" />
-			<argument type="service" id="Olla\Flow\Validator\Validator" />
-			<tag name="olla.service" alias="collection_service" /> 
-		</service>
+		
 	</services>
 </container>
