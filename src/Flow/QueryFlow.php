@@ -3,7 +3,7 @@ namespace Olla\Platform\Flow;
 
 use Olla\Flow\Security\Guard\GuardInterface;
 use Olla\Flow\Database\DBInterface;
-use Olla\Prisma\MetadataInterface;
+use Olla\Prisma\Metadata;
 use Olla\Flow\Serializer\SerializerInterface;
 use Olla\Flow\Validator\ValidatorInterface;
 
@@ -31,7 +31,7 @@ abstract class QueryFlow
     protected $context = [];
 
     public function __construct(
-        MetadataInterface $metadata, 
+        Metadata $metadata, 
         GuardInterface $guard, 
         DBInterface $database,
         SerializerInterface $serializer,

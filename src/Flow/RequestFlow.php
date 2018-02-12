@@ -2,7 +2,7 @@
 namespace Olla\Platform\Flow;
 
 use Olla\Flow\Security\Gate\GateInterface;
-use Olla\Prisma\MetadataInterface;
+use Olla\Prisma\Metadata;
 use Olla\Flow\Parser\ParserInterface;
 
 abstract class RequestFlow
@@ -17,7 +17,7 @@ abstract class RequestFlow
 
 
     public function __construct(
-        MetadataInterface $metadata, 
+        Metadata $metadata, 
         GateInterface $guard,
         ParserInterface $parser
     ) {

@@ -4,10 +4,10 @@
 	xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
 	<services>
 		<service id="Olla\Platform\Action\CollectionAction" class="Olla\Platform\Action\CollectionAction" public="true">
-			<argument type="service" id="olla.repository_component" />
-			<argument type="service" id="olla.theme_component" />
+			<argument type="service" id="olla.collection_resource" />
 		</service>
 		<service id="Olla\Platform\Action\CreateAction" class="Olla\Platform\Action\CreateAction" public="true">
+
 			
 			
 		</service>
