@@ -1,5 +1,5 @@
 <?php
-namespace Olla\Platform\DependencyInjection;
+namespace Olla\Platform\Bundle\DependencyInjection;
 
 use Symfony\Component\Config\Definition\Builder\ArrayNodeDefinition;
 use Symfony\Component\Config\Definition\Builder\TreeBuilder;

@@ -1,6 +1,7 @@
 <?php
 
-namespace Olla\Platform\Action;
+namespace Olla\Platform\Api;
+
 
 
 use Symfony\Component\HttpFoundation\Request;
@@ -8,9 +9,8 @@ use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpFoundation\JsonResponse;
 
 
-final class ItemAction extends AbstractOperation
+final class UpdateOperation 
 {
-
 	public function __invoke(Request $request) {
 		
 	}

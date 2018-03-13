@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<container xmlns="http://symfony.com/schema/dic/services"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+	<services>
+		<service id="olla_platform.api_collection_operation" 
+			class="Olla\Platform\Api\CollectionOperation" public="true">
+			
+		</service>
+		<service id="olla_platform.api_create_operation" class="Olla\Platform\Api\CreateOperation" public="true">
+
+			
+			
+		</service>
+		<service id="olla_platform.api_delete_operation" class="Olla\Platform\Api\DeleteOperation" public="true">
+			
+			
+		</service>
+		<service id="olla_platform.api_item_operation" class="Olla\Platform\Api\ItemOperation" public="true">
+			
+			
+		</service>
+		<service id="olla_platform.api_search_operation" class="Olla\Platform\Api\SearchOperation" public="true">
+			
+			
+		</service>
+		<service id="olla_platform.api_subresource_operation" class="Olla\Platform\Api\SubresourceOperation" public="true">
+			
+			
+		</service>
+		<service id="olla_platform.api_update_operation" class="Olla\Platform\Api\UpdateOperation" public="true">
+			
+			
+		</service>
+	</services>
+</container>

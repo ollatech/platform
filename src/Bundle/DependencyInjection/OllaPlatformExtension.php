@@ -1,6 +1,6 @@
 <?php
 
-namespace Olla\Platform\DependencyInjection;
+namespace Olla\Platform\Bundle\DependencyInjection;
 
 
 use Symfony\Component\Cache\Adapter\ArrayAdapter;
